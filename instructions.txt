@@ -1,0 +1,26 @@
+Cybersecurity Starter Toolkit Instructions
+
+1. Windows Scripts:
+   - Open PowerShell as Administrator.
+   - Navigate to windows-scripts directory.
+   - Run scripts, e.g., .\domain_user_audit.ps1
+   - Reports are saved in C:\Reports by default. Modify path if needed.
+
+2. Ubuntu Scripts:
+   - Make scripts executable: chmod +x *.sh
+   - Run scripts: ./system_audit.sh
+   - Reports are saved in ~/reports by default.
+
+3. Database Scripts:
+   - Open SQL Developer or SQL Server Management Studio.
+   - Run each script against a non-production database first.
+   - Export results to CSV/Excel for reporting.
+
+4. Reporting:
+   - Use audit_report_template.xlsx to record findings.
+   - Visualize patch and privileged account data using dashboard templates.
+
+5. Safety:
+   - Always run scripts in test environments first.
+   - Review scripts before running on production.
+
