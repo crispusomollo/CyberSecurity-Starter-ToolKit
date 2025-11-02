@@ -1,6 +1,6 @@
 # Cybersecurity Starter Toolkit
 
-This toolkit is designed for system administrators transitioning into the Cybersecurity Champion role.
+This toolkit is designed for system administrators transitioning into Cybersecurity role.
 It provides ready-to-use scripts for auditing Windows, Ubuntu, and database systems, along with reporting templates.
 
 ## Folder Structure
