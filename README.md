@@ -17,8 +17,7 @@
 ---
 
 ## **Overview**
-The **Cybersecurity Starter Toolkit** is designed for system administrators stepping into a cybersecurity leadership role.  
-It provides **ready-to-use scripts, templates, and dashboards** for auditing, monitoring, and hardening:
+The **Cybersecurity Starter Toolkit** is designed for system administrators stepping into a cybersecurity leadership role. It provides **ready-to-use scripts, templates, and dashboards** for auditing, monitoring, and hardening:
 
 - **Windows & Windows Server** – AD audits, local admins, password policies, server hardening  
 - **Ubuntu Linux** – system audit, patch checks, sudoers audit  
