@@ -1,6 +1,6 @@
-# 🛡️ Cybersecurity Champion Starter Toolkit
+# 🛡️ Cybersecurity Starter Toolkit
 
-**An internal security automation toolkit** for system administrators and cybersecurity champions.
+**An internal security automation toolkit** for system administrators and cybersecurity roles.
 Audit, harden, and monitor your environment across **Windows, Linux, Databases, and Network Devices** — all in one place.
 
 ---
