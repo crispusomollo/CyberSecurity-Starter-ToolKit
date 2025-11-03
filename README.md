@@ -1,5 +1,9 @@
 # 🛡️ Cybersecurity Starter Toolkit
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/<your-username>/cybersecurity-champion-toolkit/main/assets/banner.png" alt="Cybersecurity Champion Toolkit Banner" width="800"/>
+</p>
+
 A cross-platform security auditing and remediation toolkit designed for **enterprise IT environments** with mixed Windows, Linux, and network devices. Developed to empower system administrators and cybersecurity roles with actionable scripts for **visibility, compliance, and automation**. Audit, harden, and monitor your environment across **Windows, Linux, Databases, and Network Devices** — all in one place.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
