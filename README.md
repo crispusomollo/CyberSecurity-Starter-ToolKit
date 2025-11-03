@@ -173,7 +173,7 @@ This project is licensed under the **MIT License** — feel free to use and modi
 ## 👤 Author
 
 **Crispus Omollo**
-💻 Senior ICT Officer | Systems & Security Automation
+💻 Systems & Security Automation
 📧 [crispusomollo@gmail.com](mailto:crispusomollo@gmail.com)
 
 ---
