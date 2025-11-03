@@ -1,165 +1,183 @@
-# Cybersecurity Champion Starter Toolkit
+# 🛡️ Cybersecurity Champion Starter Toolkit
 
-![GitHub Repo Size](https://img.shields.io/github/repo-size/crispusomollo/CyberSecurity-Starter-ToolKit) 
-![Last Commit](https://img.shields.io/github/last-commit/crispusomollo/CyberSecurity-Starter-ToolKit) 
-![License](https://img.shields.io/github/license/crispusomollo/CyberSecurity-Starter-ToolKit)
-
-### **Technologies / Tools Covered**
-
-![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?logo=windows)  
-![Windows Server](https://img.shields.io/badge/Windows%20Server-2019%2F2022%2F2025-blue?logo=windowsserver)  
-![Ubuntu](https://img.shields.io/badge/Ubuntu-Linux-orange?logo=ubuntu)  
-![PowerShell](https://img.shields.io/badge/PowerShell-ps-blue?logo=powershell)  
-![SQL](https://img.shields.io/badge/SQL-Database-green?logo=postgresql)  
-![Oracle](https://img.shields.io/badge/Oracle-DB-red?logo=oracle)  
-![MySQL](https://img.shields.io/badge/MySQL-Database-blue?logo=mysql)  
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?logo=mongodb)  
+**An internal security automation toolkit** for system administrators and cybersecurity champions.
+Audit, harden, and monitor your environment across **Windows, Linux, Databases, and Network Devices** — all in one place.
 
 ---
 
-## **Overview**
-The **Cybersecurity Starter Toolkit** is designed for system administrators stepping into a cybersecurity leadership role. It provides **ready-to-use scripts, templates, and dashboards** for auditing, monitoring, and hardening:
+##   Features
 
-- **Windows & Windows Server** – AD audits, local admins, password policies, server hardening  
-- **Ubuntu Linux** – system audit, patch checks, sudoers audit  
-- **Databases** – Oracle, SQL Server, MySQL, MongoDB user & privilege audits, backup verification  
-- **Network Security** – firewall, switches, access points, CCTV cameras  
-
-**Key Goals:**
-- Improve **visibility** into accounts, privileges, network devices, and patch status  
-- Promote **security hygiene** in day-to-day IT operations  
-- Enable **automated reporting** for management  
+| Category | Highlights |
+|-----------|-------------|
+| 🪟 **Windows & Windows Server** | User audits, AD group tracking, patch checks, ransomware protection |
+| 🐧 **Ubuntu / Linux** | SSH audits, file integrity, firewall & cron job reviews |
+| 🧮 **Databases** | Oracle, SQL Server, MySQL, MongoDB privilege & backup checks |
+| 🌐 **Network Devices** | Firewall, switch, access point, and CCTV audit automation |
+| 📊 **Reporting Tools** | Automated dashboards, email alerts, and syslog forwarding |
+| 🚀 **Advanced Add-ons** | Threat intel feed checks, incident response collectors |
 
 ---
 
-## **Workflow Diagram**
+## 🗂️ Folder Overview
 
-```mermaid
-flowchart TD
-    A[Start: Clone Repository] --> B{Select Environment}
-    B --> |Windows / Server| C[Run PowerShell Scripts]
-    B --> |Ubuntu| D[Run Shell Scripts]
-    B --> |Database| E{Choose DB}
-    E --> |Oracle / SQL Server| F[Run SQL Scripts]
-    E --> |MySQL| G[Run MySQL Scripts]
-    E --> |MongoDB| H[Run MongoDB Scripts]
-    B --> |Network| I[Run Network Audit Scripts]
-    C --> J[Export Reports to CSV/Excel]
-    D --> J
-    F --> J
-    G --> J
-    H --> J
-    I --> J
-    J --> K[Populate Reporting Templates]
-    K --> L[Visualize in Dashboard / Share with Management]
-    L --> M[Repeat Audits Regularly]
+```bash
+windows-scripts/        → PowerShell scripts for endpoints & servers
+ubuntu-scripts/         → Bash scripts for Linux hosts
+database-scripts/       → SQL/JS scripts for DB security auditing
+network-scripts/        → Infrastructure device checks (firewall, switches, APs)
+reporting-tools/        → Python scripts for reporting and dashboards
+advanced/               → Proactive automation & threat intelligence
+report-templates/       → Excel/CSV templates for reporting
 ```
 
-> Workflow: choose environment → run scripts → export reports → populate templates → visualize → repeat.
-
----
-
-## **Folder Structure**
+## 🧱 FOLDER STRUCTURE
 
 ```
 Cybersecurity_Champion_Toolkit/
 │
-├── windows-scripts/       # PowerShell scripts for AD, local admins, server hardening
-├── ubuntu-scripts/        # Linux system audit & patch scripts
-├── database-scripts/      # Oracle, SQL Server, MySQL, MongoDB scripts
-├── network-scripts/       # Firewall, switch, AP, CCTV audit scripts
-├── report-templates/      # Excel & CSV templates for dashboards
+├── windows-scripts/
+│   ├── domain_user_audit.ps1
+│   ├── local_admin_audit.ps1
+│   ├── server_hardening.ps1
+│   ├── patch_status.ps1
+│   ├── ransomware_protection_check.ps1
+│   ├── event_log_monitor.ps1
+│   └── ad_group_changes.ps1
+│
+├── ubuntu-scripts/
+│   ├── system_audit.sh
+│   ├── ssh_config_audit.sh
+│   ├── user_permission_audit.sh
+│   ├── firewall_status_ufw.sh
+│   ├── cron_audit.sh
+│   ├── port_scan_check.sh
+│   └── file_integrity_check.sh
+│
+├── database-scripts/
+│   ├── oracle_user_privileges.sql
+│   ├── sqlserver_logins_roles.sql
+│   ├── mysql_user_privileges.sql
+│   ├── mysql_backup_check.sh
+│   ├── mongodb_user_privileges.js
+│   └── mongodb_backup_check.js
+│
+├── network-scripts/
+│   ├── firewall_audit.sh
+│   ├── switch_config_backup.sh
+│   ├── access_point_audit.sh
+│   ├── cctv_status_check.sh
+│   ├── open_port_audit.sh
+│   └── network_inventory_scan.sh
+│
+├── reporting-tools/
+│   ├── generate_audit_report.py
+│   ├── security_summary_dashboard.py
+│   ├── email_alerts.py
+│   ├── log_anomaly_detector.py
+│   └── syslog_forwarder.py
+│
+├── advanced/
+│   ├── security_baseline_checker.py
+│   ├── endpoint_inventory_collector.py
+│   ├── threat_intel_feed_checker.py
+│   └── incident_response_collector.py
+│
+├── report-templates/
+│   ├── audit_report_template.xlsx
+│   ├── privileged_accounts_template.csv
+│   └── patch_dashboard_template.xlsx
+│
 ├── README.md
 ├── instructions.txt
-└── LICENSE
+├── LICENSE
+└── .gitignore
 ```
 
 ---
 
-## **Getting Started**
+## 🧰 Getting Started
 
-### **1. Clone the Repository**
+Clone the repo:
 
 ```bash
-git clone https://github.com/crispusomollo/CyberSecurity-Starter-ToolKit.git
+git clone https://github.com/crispusomollo/Cybersecurity_Starter_Toolkit.git
 cd Cybersecurity_Starter_Toolkit
 ```
 
-### **2. Windows & Windows Server Scripts**
-
-* Open PowerShell as Administrator
-* Navigate to `windows-scripts/` and run scripts:
+Run scripts based on OS:
 
 ```powershell
+# Windows
+cd windows-scripts
 .\domain_user_audit.ps1
-.\server_hardening.ps1
 ```
-
-* Reports saved in `C:\Reports`.
-
-### **3. Ubuntu Scripts**
-
-* Make scripts executable:
 
 ```bash
-chmod +x *.sh
+# Ubuntu
+cd ubuntu-scripts
+bash system_audit.sh
 ```
 
-* Run scripts:
+For databases:
 
 ```bash
-./system_audit.sh
-./patch_update_check.sh
+mysql -u root -p < database-scripts/mysql_user_privileges.sql
 ```
 
-* Reports saved in `~/reports/`.
+---
 
-### **4. Database Scripts**
+## 🧱 System Architecture
 
-* **Oracle / SQL Server** – run `.sql` files in your client
-* **MySQL** – run `.sql` or `.sh` scripts, check `/var/backups/mysql/` for backup reports
-* **MongoDB** – run `.js` scripts using `mongo` shell, check backup paths
-* Always **test on non-production environments first**
-
-### **5. Network Security Scripts**
-
-* Run scripts in `network-scripts/` to check:
-
-  * Firewall status
-  * Switch ports via SNMP
-  * Access points connected devices
-  * CCTV camera status & firmware
+```
+┌───────────────────────────────┐
+│       Endpoints & Servers     │
+│  (Windows / Ubuntu / Server)  │
+└──────────────┬────────────────┘
+               │
+               ▼
+┌───────────────────────────────┐
+│        Databases Layer        │
+│  Oracle / SQL Server / MySQL  │
+│           / MongoDB           │
+└──────────────┬────────────────┘
+               │
+               ▼
+┌───────────────────────────────┐
+│    Network & Infrastructure   │
+│ (Firewall / Switch / AccessPt)│
+└──────────────┬────────────────┘
+               │
+               ▼
+┌───────────────────────────────┐
+│      Reporting & Alerts       │
+│ Dashboards / Email / Syslog   │
+└───────────────────────────────┘
+```
 
 ---
 
-## **Reporting**
+## 🪄 Future Additions
 
-* Populate results in `report-templates/audit_report_template.xlsx` or `privileged_accounts_template.csv`
-* Visualize dashboards:
-
-  * Patch compliance
-  * Privileged account audits
-  * Database security
-  * Network device audit
+* Security Baseline comparison against CIS Benchmarks
+* Integration with SIEM tools (e.g. Wazuh, Graylog)
+* Scheduled reports & compliance scoring
 
 ---
 
-## **Contributing**
+## 📜 License
 
-* Fork the repository, add new scripts, templates, or improvements, and submit a Pull Request
-
----
-
-## **License**
-
-MIT License – see [LICENSE](LICENSE) for details
+This project is licensed under the **MIT License** — feel free to use and modify with attribution.
 
 ---
 
-### ✅ **Tips**
+## 👤 Author
 
-* Add screenshots of report outputs for clarity
-* Schedule recurring audits with Task Scheduler (Windows) or cron (Linux)
-* Expand scripts gradually to include **alerts and automated remediation**
+**Crispus Omollo**
+💻 Senior ICT Officer | Systems & Security Automation
+📧 [crispusomollo@gmail.com](mailto:crispusomollo@gmail.com)
+
+---
+
+⭐ *If this project helps your organization improve internal security, give it a star on GitHub!*
 
 
