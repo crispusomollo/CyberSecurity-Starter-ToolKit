@@ -97,48 +97,50 @@ Cybersecurity_Champion_Toolkit/
 
 ## 🧰 Getting Started
 
-Clone the repo:
+### Clone the repo:
 
 ```bash
 git clone https://github.com/crispusomollo/Cybersecurity_Starter_Toolkit.git
 cd Cybersecurity_Starter_Toolkit
 ```
 
-## Example Usage
+### Example Usage
 
+- Test in a lab environment before applying in production.
+- Never embed credentials in scripts — use environment variables or secure vaults.
 
-### 🧮 Database Audit
+#### 🧮 Database Audit
 ```sql
 mysql -u root -p < database-scripts/mysql_audit.sql
 mongo < database-scripts/mongodb_audit.js
 sqlplus sys@ORCL as sysdba @database-scripts/oracle_audit.sql
 ```
 
-### 🔐 SSH Audit & Hardening
+#### 🔐 SSH Audit & Hardening
 ```bash
 sudo bash ssh/ssh_audit.sh --apply
 ```
 
-### 🌐 Network Security
+#### 🌐 Network Security
 ```bash
 sudo bash network/firewall_audit.sh --apply
 sudo bash network/switch_audit.sh
 ```
 
-### 🐳 Docker & VM
+#### 🐳 Docker & VM
 ```bash
 sudo bash docker/docker_audit.sh --apply
 sudo bash vm/vm_audit.sh
 ```
 
-### 🪟 Windows Server / AD
+#### 🪟 Windows Server / AD
 ``` powershell
 # Run PowerShell as Administrator
 .\windows\win_server_audit.ps1 -Apply
 .\windows\ad_audit.ps1 -Apply
 ```
 
-### 📊 Generate Report
+#### 📊 Generate Report
 ```bash
 python3 reporting-tools/generate_report.py
 ```
