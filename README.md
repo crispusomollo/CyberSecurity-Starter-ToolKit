@@ -2,6 +2,14 @@
 
 A cross-platform security auditing and remediation toolkit designed for **enterprise IT environments** with mixed Windows, Linux, and network devices. Developed to empower system administrators and cybersecurity roles with actionable scripts for **visibility, compliance, and automation**. Audit, harden, and monitor your environment across **Windows, Linux, Databases, and Network Devices** — all in one place.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-blue.svg)](#)
+[![Database](https://img.shields.io/badge/Database-MySQL%20%7C%20Oracle%20%7C%20MongoDB-orange.svg)](#)
+[![Automation](https://img.shields.io/badge/Scripts-Bash%20%7C%20PowerShell%20%7C%20Python-yellow.svg)](#)
+[![Security Level](https://img.shields.io/badge/Security-Audit%20%26%20Hardening-critical.svg)](#)
+[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)](../../issues)
+[![Maintained](https://img.shields.io/badge/Maintained-Active-success.svg)](#)
+
 ---
 
 ##   Features
@@ -24,6 +32,7 @@ windows-scripts/        → PowerShell scripts for endpoints & servers
 ubuntu-scripts/         → Bash scripts for Linux hosts
 database-scripts/       → SQL/JS scripts for DB security auditing
 network-scripts/        → Infrastructure device checks (firewall, switches, APs)
+virtualization/         → VM audit for virtualization type and network exposure
 reporting-tools/        → Python scripts for reporting and dashboards
 advanced/               → Proactive automation & threat intelligence
 report-templates/       → Excel/CSV templates for reporting
