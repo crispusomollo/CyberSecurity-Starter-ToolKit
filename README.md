@@ -81,8 +81,8 @@ Cybersecurity_Champion_Toolkit/
 ### **1. Clone the Repository**
 
 ```bash
-git clone https://github.com/USERNAME/RepoName.git
-cd Cybersecurity_Champion_Toolkit
+git clone https://github.com/crispusomollo/CyberSecurity-Starter-ToolKit.git
+cd Cybersecurity_Starter_Toolkit
 ```
 
 ### **2. Windows & Windows Server Scripts**
