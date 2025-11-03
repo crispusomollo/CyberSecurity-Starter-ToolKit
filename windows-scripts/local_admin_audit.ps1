@@ -1,8 +1,14 @@
+Import-Module ActiveDirectory
+
+$reportDir = "C:\Reports"
+if (!(Test-Path $reportDir)) { New-Item -Path $reportDir -ItemType Directory -Force }
+
 $computers = Get-ADComputer -Filter * | Select-Object -ExpandProperty Name
 $results = @()
+
 foreach ($computer in $computers) {
     try {
-        $admins = Get-LocalGroupMember -Group "Administrators" -ComputerName $computer
+        $admins = Invoke-Command -ComputerName $computer -ScriptBlock { Get-LocalGroupMember -Group "Administrators" } -ErrorAction Stop
         foreach ($admin in $admins) {
             $results += [PSCustomObject]@{
                 Computer = $computer
@@ -11,9 +17,13 @@ foreach ($computer in $computers) {
             }
         }
     } catch {
-        Write-Warning "Cannot connect to $computer"
+        $results += [PSCustomObject]@{
+            Computer = $computer
+            Admin = "ERROR: $_"
+            ObjectType = "Error"
+        }
     }
 }
-$results | Export-Csv -Path "C:\Reports\LocalAdminAudit.csv" -NoTypeInformation
-Write-Host "Local admin audit exported to C:\Reports\LocalAdminAudit.csv"
 
+$results | Export-Csv -Path "$reportDir\LocalAdminAudit.csv" -NoTypeInformation -Force
+Write-Host "Saved to $reportDir\LocalAdminAudit.csv"
