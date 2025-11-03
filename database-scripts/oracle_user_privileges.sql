@@ -1,9 +1,6 @@
--- List all users
-SELECT username, account_status FROM dba_users;
-
--- List system privileges per user
-SELECT grantee, privilege FROM dba_sys_privs;
-
--- List object privileges
-SELECT grantee, owner, table_name, privilege FROM dba_tab_privs;
-
+-- Oracle: list users and their account status
+SELECT username, account_status, created FROM dba_users ORDER BY username;
+-- System privileges
+SELECT grantee, privilege FROM dba_sys_privs ORDER BY grantee;
+-- Object privileges
+SELECT grantee, owner, table_name, privilege FROM dba_tab_privs ORDER BY grantee;
