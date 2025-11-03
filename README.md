@@ -162,5 +162,4 @@ MIT License – see [LICENSE](LICENSE) for details
 * Schedule recurring audits with Task Scheduler (Windows) or cron (Linux)
 * Expand scripts gradually to include **alerts and automated remediation**
 
-```
 
