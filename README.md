@@ -104,24 +104,43 @@ git clone https://github.com/crispusomollo/Cybersecurity_Starter_Toolkit.git
 cd Cybersecurity_Starter_Toolkit
 ```
 
-Run scripts based on OS:
+## Example Usage
 
-```powershell
-# Windows
-cd windows-scripts
-.\domain_user_audit.ps1
+
+### 🧮 Database Audit
+```sql
+mysql -u root -p < database-scripts/mysql_audit.sql
+mongo < database-scripts/mongodb_audit.js
+sqlplus sys@ORCL as sysdba @database-scripts/oracle_audit.sql
 ```
 
+### 🔐 SSH Audit & Hardening
 ```bash
-# Ubuntu
-cd ubuntu-scripts
-bash system_audit.sh
+sudo bash ssh/ssh_audit.sh --apply
 ```
 
-For databases:
-
+### 🌐 Network Security
 ```bash
-mysql -u root -p < database-scripts/mysql_user_privileges.sql
+sudo bash network/firewall_audit.sh --apply
+sudo bash network/switch_audit.sh
+```
+
+### 🐳 Docker & VM
+```bash
+sudo bash docker/docker_audit.sh --apply
+sudo bash vm/vm_audit.sh
+```
+
+### 🪟 Windows Server / AD
+``` powershell
+# Run PowerShell as Administrator
+.\windows\win_server_audit.ps1 -Apply
+.\windows\ad_audit.ps1 -Apply
+```
+
+### 📊 Generate Report
+```bash
+python3 reporting-tools/generate_report.py
 ```
 
 ---
