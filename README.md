@@ -5,8 +5,9 @@
 ![License](https://img.shields.io/github/license/crispusomollo/CyberSecurity-Starter-ToolKit)
 
 ### **Technologies / Tools Covered**
+
 ![Windows](https://img.shields.io/badge/Windows-10%2F11-blue?logo=windows)  
-![Windows Server](https://img.shields.io/badge/Windows%20Server-2019-blue?logo=windowsserver)  
+![Windows Server](https://img.shields.io/badge/Windows%20Server-2025-blue?logo=windowsserver)  
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-Linux-orange?logo=ubuntu)  
 ![PowerShell](https://img.shields.io/badge/PowerShell-ps-blue?logo=powershell)  
 ![SQL](https://img.shields.io/badge/SQL-Database-green?logo=postgresql)  
