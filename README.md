@@ -1,7 +1,6 @@
 # 🛡️ Cybersecurity Starter Toolkit
 
-**An internal security automation toolkit** for system administrators and cybersecurity roles.
-Audit, harden, and monitor your environment across **Windows, Linux, Databases, and Network Devices** — all in one place.
+A cross-platform security auditing and remediation toolkit designed for **enterprise IT environments** with mixed Windows, Linux, and network devices. Developed to empower system administrators and cybersecurity roles with actionable scripts for **visibility, compliance, and automation**. Audit, harden, and monitor your environment across **Windows, Linux, Databases, and Network Devices** — all in one place.
 
 ---
 
